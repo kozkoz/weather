@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+main .container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#now .info p {
+    text-align:center;
+}
+
+@media only screen and (min-width: 650px) {
+    /*デバイスの横幅が650px以上の場合*/
+    .withSlice{
+        margin:auto 20%;
+    }
+    #now {
+        margin: 0 auto;
+        
+        max-width: 400px;
+        min-height: 400px;
+    }
+    #now .icon img {
+        width: 400px;
+    }
+} 
+
+@media only screen and (max-width: 650px) {
+    /*デバイスの横幅が650px以下の場合*/
+    #now {
+        margin: 0 auto;
+        
+        max-width: 300px;
+        min-height: 300px;
+    }
+    #now .icon img {
+        width: 300px;
+    }
+} 

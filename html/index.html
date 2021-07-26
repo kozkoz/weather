@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src= "../js/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <link rel="stylesheet"  href="../css/index.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+</head>
+<body>
+  <ons-page>
+    <div class="withSlice">
+      <div style="height: 200px; padding: 1px 0 0 0;">
+        <div class="card">
+          <div style="text-align: center; margin-top: 30px;">
+            <h2 class="card__title">Weather Check</h2>
+            <p>
+              <ons-input id="city name" modifier="material" placeholder="city name" float></ons-input>
+            </p>
+            <p style="margin-top: 30px;">
+              <ons-button onclick="checkWeaher()">Check Weather</ons-button>
+            </p>
+          </div>
+          <div class="container">
+            <div  id="now">
+              <div id="images"></div>
+              <div id="innerText"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ons-page>
+
+
+
+</body>
+</html>
